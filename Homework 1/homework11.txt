@@ -1,0 +1,24 @@
+jc_0=1;
+for m=(1:0)
+    jc_0=jc_0*m;
+end
+
+jc_1=1;
+for m=(1:1)
+    jc_1=jc_1*m;
+end
+
+jc_4=1;
+for m=(1:4)
+    jc_4=jc_4*m;
+end
+                                 %calculate k! that may be needed later.
+
+format long
+pi                                                 %print system pi
+sum_0=jc_0*(1103+26390*0)/(jc_0^4*396^(4*0));
+pi_0=1/(2*sqrt(2)/9801*sum_0)                      %print pi_0
+delta_0=pi_0-pi                                    %print delta_0=pi_0-pi
+sum_1=jc_4*(1103+26390*1)/(jc_1^4*396^(4*1))+sum_0;
+pi_1=1/(2*sqrt(2)/9801*sum_1)                      %print pi_1
+delta_1=pi_1-pi                                    %print delta_1=pi_1-pi
