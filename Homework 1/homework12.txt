@@ -1,0 +1,7 @@
+mat1=zeros(2,5);
+mat2=1:5;
+mat3=0:2:8;
+mat4=[8 7 2 5 9];
+mat5=ones(5,1);
+mat6=[mat1;mat2;mat3;mat4];
+mat6=[mat6 mat5]
