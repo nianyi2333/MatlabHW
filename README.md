@@ -12,3 +12,7 @@ Matlab homework for the hippo's students
 5.后续作业提交，只在你自己的分支下上传代码。
 
 详细图文教程见PPT（极其小白）
+
+# PPT已上传：
+
+https://www.zhihu.com/question/20070065
