@@ -15,4 +15,4 @@ Matlab homework for the hippo's students
 
 # PPT已上传：
 
-https://www.zhihu.com/question/20070065
+http://stardust.lamost.org/teaching/matlab/
