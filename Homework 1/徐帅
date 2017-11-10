@@ -1,7 +1,0 @@
-   newpidaoshu=[0,0];
-   newpidaoshu(1)=(2*sqrt(2)/9801)*factorial(4*0)*(1103+26390*0)/((factorial(0))^4*396^(4*0));
-   newpidaoshu(2)=newpidaoshu(1)+(2*sqrt(2)/9801)*factorial(4*1)*(1103+26390*1)/((factorial(1))^4*396^(4*1));
-   for m=1:2
-       newpi(m)=1/newpidaoshu(m)
-       chabie(m)=pi-newpi(m)
-   end %{第一个是N=0的，第二个是N=1的,请查看显示俩个数时的newpi和chabie}%
