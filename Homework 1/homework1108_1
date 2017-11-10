@@ -1,0 +1,6 @@
+%check the folder to find the function file 'cal_pi'
+format long;
+pi_0=cal_pi(0)
+pi_1=cal_pi(1)
+delta_pi_0=(pi_0-pi)/pi
+delta_pi_1=(pi_1-pi)/pi
