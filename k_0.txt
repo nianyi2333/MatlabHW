@@ -1,0 +1,3 @@
+m=((2*2^0.5)/9801)*(1103/(1*1));
+p=vpa(1/m)%output p
+d=(p-vpa(pi))/vpa(pi)%compare with pi
