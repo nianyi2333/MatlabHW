@@ -1,0 +1,23 @@
+format long;
+
+pi0 = (2*2^0.5/9801*1103)^(-1)
+
+wucha0 = (pi0-pi)/pi
+if wucha0<0
+	disp('smaller than pi.')
+else
+	disp('larger than pi.')
+end
+
+latter = 0;
+for k = 0:1;
+	latter = factorial(4*k)*(1103+26390*k)/(factorial(k)^4*396^(4*k)) + latter;
+end;
+pi1 = (2*2^0.5/9801*latter)^(-1)
+wucha1 = (pi1-pi)/pi
+if wucha1<0
+	disp('smaller than pi.');
+else
+	disp('larger than pi.');
+end
+
