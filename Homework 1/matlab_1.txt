@@ -1,0 +1,35 @@
+
+format long
+%n=0
+sum0=1103
+new_pi0=1/((2*2^(1/2)*sum0)/9801)
+xigema0=abs(new_pi0-pi)/pi
+
+%n=1
+k=1
+jiecheng_4k=1
+for i=1:4*k
+    jiecheng_4k=i*jiecheng_4k
+end
+jiecheng_k=1
+for j=1:k
+    jieheng_k=j*jiecheng_k
+end
+sum1_part=(jiecheng_4k*(1103+26390*k))/(((jiecheng_k)^4)*396^(4*k))
+sum1=sum0+sum1_part
+new_pi1=1/((2*2^(1/2)*sum1)/9801)
+xigema1=abs(new_pi1-pi)/pi
+    
+
+
+
+
+
+
+
+
+%create a special matrix
+M=zeros(5,6)
+M(1:end,6)=1
+M(3?end,1:end-1)=[(1:5);(0:2:8);8,7,5,2,9]
+
