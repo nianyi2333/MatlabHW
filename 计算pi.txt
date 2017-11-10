@@ -1,0 +1,18 @@
+nd = 30;
+digits(nd) %确定精度
+facto_k = 1;
+k = 0;
+s0 = 1103;
+
+%计算k为1、2时的pi值，s0为求和结果
+for k=1:2
+    n = 4*k;
+    facto_4k = vpa(factorial(n));
+    facto_k = vpa(factorial(k));
+    k_4 = vpa(4*k);
+    s0 = vpa(s0+facto_4k*(1103+26390*k)/(facto_k^4*396^k_4));
+    k
+    pi_0 = vpa(1/(2*sqrt(2))/s0*9801)
+    vpa(pi)%此处输出自带pi值以便直观比较
+    error = vpa(pi_0-pi)/vpa(pi)%此处为相对误差
+end
