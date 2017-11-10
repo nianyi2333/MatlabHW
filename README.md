@@ -17,6 +17,6 @@ Matlab homework for the hippo's students
 
 http://stardust.lamost.org/teaching/matlab/
 
-# 怎样使用Github推荐阅读
+# 怎样使用Github，推荐阅读
 
 https://www.zhihu.com/question/20070065
