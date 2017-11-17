@@ -17,13 +17,22 @@ end
 display(luminance)
 
 %homework2_2 201611160105 吕益鹏
-function [l,b]=eqtogal(ra,dec);
-a_gp=192.85948;
-d_gp=27.12825;
-l_gp=122.932;
-b=asin(sin(d_gp)*sin(dec)+cos(d_gp)*cos(dec)*cos(ra-a_gp))
-l=l_gp-asin(cos(dec)*sin(ra-a_gp)/cos(b))
-%只要两个式子就可以算出
+%后面有1的表示以角度为单位
+%后面没有1的表示以弧度为单位
+%只要用两个式子就可以算出
 %第三个式子效果和第二个式子是一样的
-%l=l_gp-acos((cos(d_gp)*sin(dec)-sin(d_gp)*cos(dec)*cos(ra-a_gp))/cos(b))
+function [l,b]=eqtogal(ra1,dec1)
+ra=ra1*pi/180;%角度转弧度
+dec=dec1*pi/180;%角度转弧度
+a_gp=192.85948*pi/180;%角度转弧度
+d_gp=27.12825*pi/180;%角度转弧度
+l_gp=122.932*pi/180;%角度转弧度
+b1=asin(sin(d_gp)*sin(dec)+cos(d_gp)*cos(dec)*cos(ra-a_gp));
+b=b1*180/pi;%弧度转角度
+%下面是第二个式子
+%l1=l_gp-asin(cos(dec)*sin(ra-a_gp)/cos(b1));
+l1=l_gp-acos((cos(d_gp)*sin(dec)-sin(d_gp)*cos(dec)*cos(ra-a_gp))/cos(b));
+l=l1*180/pi;%弧度转角度
+disp(['l=',num2str(l)])
+disp(['b=',num2str(b)])
 end
