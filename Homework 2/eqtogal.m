@@ -27,7 +27,7 @@ if key(1) == 1 && key(2) == 1 %quadrant 1
 elseif key(1) == 1 && key(2) == 0 %quadrant 2 (cos is right but sin is not)
     theta1 = pi - asin(si_lc) ; theta2 = acos(co_lc);
 elseif key(1) == 0 && key(2) == 0 %quadrant 3 (both nor right)
-    theta1 = 1.5 * pi - asin(si_lc) ; theta2 = 2 * pi - acos(co_lc);
+    theta1 = pi - asin(si_lc) ; theta2 = 2 * pi - acos(co_lc);
 elseif key(1) == 0 && key(2) == 1 %quadrant 4 (sin right but cos is not)
     theta1 = asin(si_lc) ; theta2 = -1 * acos(co_lc);
 else 
