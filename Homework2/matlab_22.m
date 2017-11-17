@@ -1,5 +1,7 @@
 %divert ra and dej to l and b
 function[l_mean,b]=matlab_22(ra,dej)
+%ra=266.405;
+%dej=-28.936;
 GP=[192.85948,27.12825];
 lcp=122.932;
 k=180/pi;%rad->degree
@@ -28,6 +30,20 @@ elseif sin_lcp_l<0&cos_lcp_l>0%forth
     lcp_l_cos=-lcp_l_cos;
 end
 
+
+%make sure that l is in the range which is from 0 to 360
+if lcp_l_sin>132
+    lcp_l_sin=lcp_l_sin-360;
+elseif lcp_l_sin<-228
+    lcp_l_sin=lcp_l_sin+360;
+end
+if lcp_l_cos>132
+    lcp_l_cos=lcp_l_cos-360;
+elseif lcp_l_sin<-228
+    lcp_l_cos=lcp_l_cos+360;   
+end
+display(lcp_l_sin)
+display(lcp_l_cos)
 lsin=lcp*k-lcp_l_sin;
 lcos=lcp*k-lcp_l_cos;
 
