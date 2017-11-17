@@ -16,7 +16,7 @@ sin_lcp_l=cos(dej)*sin(ra-GP(1))/cosb;%sin(lcp-l)
 cos_lcp_l=(cos(GP(2))*sin(dej)-sin(GP(2))*cos(dej)*cos(ra-GP(1)))/cosb;
     %cos(lcp-l)
 
-b=abs(acos(cosb));
+b=asin(sinb)*k;
 
 lcp_l_sin=asin(sin_lcp_l)*k;%lcp-l(from sin)
 lcp_l_cos=acos(cos_lcp_l)*k;%lcp-l(from cos)
